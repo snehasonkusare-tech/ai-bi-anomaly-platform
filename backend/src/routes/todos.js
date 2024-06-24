@@ -32,7 +32,7 @@ router.put('/:id', async (req, res) => {
   const { id } = req.params;
 
   try {
-    const updatedTodo = await Todo.findByIdAndUpdate(id, { completed: !req.body.completed }, { new: true }); // Ensure updated document is returned
+    const updatedTodo = await Todo.findByIdAndUpdate(id, { completed: req.body.completed }, { new: true }); // Ensure updated document is returned
 
     if (!updatedTodo) {
       return res.status(404).send('Todo not found');
