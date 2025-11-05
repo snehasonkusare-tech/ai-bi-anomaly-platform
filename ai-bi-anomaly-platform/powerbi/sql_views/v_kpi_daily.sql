@@ -1,0 +1,1 @@
+CREATE VIEW v_kpi_daily AS SELECT * FROM kpi_daily;

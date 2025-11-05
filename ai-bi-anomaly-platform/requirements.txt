@@ -1,0 +1,7 @@
+pandas
+prophet
+boto3
+sqlalchemy
+apache-airflow-client
+scikit-learn
+matplotlib
